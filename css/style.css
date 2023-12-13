@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+/* 공통 부분
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+.main-text {
+    color: rgb(255, 255, 255);
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* 큰 배경 이미지 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* 제목 */
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+/* 버튼 */
+.button {
+    font-size: 1.375rem;
+    background: rgb(0, 45, 86);
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: rgb(0, 45, 86)
+}
+
+/* HOME
+------------------------------- */
+#home {
+    background-image: url(../images/hufs_gate.jpg);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+}
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.Welcome {
+    text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+.survey {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.survey h3 {
+    margin-bottom: 16px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.survey input[type="radio"] {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.survey label {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.item-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.item-each {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* spring
+------------------------------- */
+#spring {
+    background-image: url(../images/spring-bg.jpg);
+    min-height: 100vh;
+}
+.spring-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.spring-content .page-title {
+    text-align: center;
+}
+.spring-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+/* summer
+------------------------------- */
+#summer {
+    background-image: url(../images/summer-bg.jpg);
+    min-height: 100vh;
+}
+.summer-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.summer-content .page-title {
+    text-align: center;
+}
+.summer-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+/* fall
+------------------------------- */
+#fall {
+    background-image: url(../images/fall-bg.jpg);
+    min-height: 100vh;
+}
+.fall-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.fall-content .page-title {
+    text-align: center;
+}
+.fall-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+/* winter
+------------------------------- */
+#winter {
+    background-image: url(../images/winter-bg.jpeg);
+    min-height: 100vh;
+}
+.winter-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.winter-content .page-title {
+    text-align: center;
+}
+.winter-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+.lunch_table {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lunch_table table {
+    align-content: space-between;
+}
+
+.lunch_table th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.lunch_table th {
+    background-color: #ffdead;
+    color: #333;
+    min-width: 100px
+}
+
+.lunch_table tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.lunch_table tr:hover {
+    background-color: #f5f5dc;
+}
+
+.item {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item ol {
+    padding-left: 150px;
+    list-style-position: inside;
+}
+
+.item li {
+    text-align: left;
+    line-height: 2.0;
+}
+
+.item p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.image-wrapper {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+/* CONTACT
+------------------------------- */
+#contact {
+    background-image: url(../images/contact-bg.webp);
+    min-height: 100vh;
+}
+
+/* 입력 양식 */
+form div {
+    margin-bottom: 14px;
+
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 가게 정보와 지도 */
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+
+/* 푸터
+------------------------------- */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* 모바일 버전
+------------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* NEWS */
+    .news-contents {
+        flex-direction: column;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+    /* spring */
+    .spring-content {
+        margin-top: 20%;
+    }
+
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* 입력 양식 */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 가게 정보와 지도와 SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
+
+
